@@ -1,5 +1,17 @@
 
+var $tabs = $('.tabs');
+var $panels = $('.panel');
 
+$tabs.on('click', 'a', function (e){
+	e.preventDefault();
+	var id = $(this).attr('href');
+
+	$panels.filter(':not([hidden])').attr('hidden', true);
+	$(id).removeAttr('hidden');
+
+	$tabs.find('.js-current').removeClass('js-current');
+	$(this).addClass('js-current');
+});
 
 /**
  * @Titulo: Slider Responsivo
@@ -165,51 +177,13 @@ function myFunction() {
 }
 
 
-function tabOver(evt, tabName) {
-  var i, x, tablinks;
-  x = document.getElementsByClassName("pane-name");
-  for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < x.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace(" tab_background_active", "");
-  }
-  document.getElementById(tabName).style.display = " block";
-  evt.currentTarget.className += " tab_background_active";
-}
+
 
 
 
 // ============================================================
 
-// scrollbars init
-(function() {
-    var selectors = {
-        nav: '[data-phases-nav]',
-        tabs: '[data-phases-tabs]',
-        active: '.__active'
-    };
-    var classes = {
-        active: '__active'
-    };
-    $('a', selectors.nav).on('click', function() {
-        let $this = $(this)[0];
-        $(selectors.active, selectors.nav).removeClass(classes.active);
-        $($this).addClass(classes.active);
-        $('div', selectors.tabs).removeClass(classes.active);
-        $($this.hash, selectors.tabs).addClass(classes.active);
-        return false;
-    });
-}());
-(function(document) {
-    var baseScrollConfig = {
-        wheelSpeed: 1,
-        wheelPropagation: true,
-        minScrollbarLength: 10
-    };
-    $('[data-scroll]').perfectScrollbar(baseScrollConfig);
-})(window.document);
+
 
 
 
