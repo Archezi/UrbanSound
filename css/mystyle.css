@@ -314,7 +314,10 @@ input[type="text"], input[type="password"], textarea {
 
 
 /* BUTTON CONTAINER ===  IMG NAVIGATION SECTION */
-
+.button-Container {
+  display: flex;
+  flex-wrap: wrap;
+}
 #box-mainPage { float: left; }
 .button-area { float: right; width: 100%; }
 
@@ -617,7 +620,7 @@ ul.topnav li.icon {display: none;}
 .add-item-btn {
     position: relative;
     float: left;
-    margin: 10px 0 0 ;
+    margin: 0;
     line-height: 20px;
     background-color: #edebe6;
     width: 170px;
@@ -631,11 +634,13 @@ ul.topnav li.icon {display: none;}
     background-color: #404040;
     color: #fff;
 }
- 
+.add-item-btn h3:hover {
+   color: #A69A7C;
+}
 .add-item-btn > h3 {
     font-size: 16px;
     font-weight: 400;
-    color: #fff;
+    color: #404040;
     
 }
 
@@ -654,7 +659,7 @@ ul.topnav li.icon {display: none;}
     
 }
 .product-info-price > h2 {
-    margin: 8px 0 20px;
+    margin: 8px 0 10px;
 }
 
 .product-description {
@@ -749,27 +754,19 @@ ul.topnav li.icon {display: none;}
   margin-right: 15px;
   float: left;
 }
-.product-choice-box img {
-   padding-left: 49px;
-    padding-right: 49px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-.product-name-h3 {
+
+.product-name-h3 > h3 > a {
   line-height: 20px;
-  padding: 10px 10px 0;
+  padding: 10px 0;
   color: #404040;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 22px;
+  text-align: center;
+  margin: 0;
   
 }
-.product-choice-box  h3 {
-  color: #404040;
-  font-weight: 400;
-  font-size: 16px;
 
-}
-.product-choice-box  h3:hover {
+.product-name-h3 > h3 > a:hover {
   color: #908366;
 }
 
@@ -779,21 +776,20 @@ ul.topnav li.icon {display: none;}
   font-weight: bold;
 
 }
-.add-price-btn {
-  width: 100%;
-  margin-left: 10px;
-  margin-left: 5px;
- }
 
+/*  Product box  */
+.addprice-bar {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  min-height: 50px;
+}
 .item-price-choice-box {
   width: auto;
-  margin-left: 15px;
-  line-height: 20px;
-  float: left;
-  margin-top: 10px;
-  text-align: center;
-  
+  padding-left: 10px;
 }
+
+
 .details-button {
     padding-top: 10px;
     color: #0096d6;
@@ -802,8 +798,7 @@ ul.topnav li.icon {display: none;}
 }
 .brand-logo-placer {
   width: 100%;
-  height: 30px;
-  
+  padding: 10px;
   position: relative;
   
 }
@@ -817,8 +812,9 @@ ul.topnav li.icon {display: none;}
 .Bose_QuietComfort_25 { background: rgba(0, 0, 0, 0) url(../images/tumbnail/over-ear-btn.jpg) no-repeat scroll center 30px;  }
 
 .product-image-placeholder {
-    width: 100%;
-    height: 170px;
+    padding: 0;
+    text-align: center;
+    
 }
 
 
@@ -995,9 +991,9 @@ ul.topnav li.icon {display: none;}
 .tabs {
     position: relative;
     background-color: #fff;
-    -webkit-box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.25);
-    -moz-box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.25);
-    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.25)
+    -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.25)
 }
 .tabs li {
   background-color: #404040;
@@ -1129,7 +1125,7 @@ a.js-current {
   
   
 
-    .button5 { float: left; margin: 1%; padding: 0; position: relative; width: 48%; }
+    .button5 { ; margin: 10px 0 0; padding: 0; position: relative; width: 100%; }
     .button5:last-child { margin-left: 0; }
     .button5 h3 { margin: 20px 10px 0 10px; text-align: left; color: #B9B29C; }
     .button1 { text-align: center; float: left; margin: 1%; padding: 0; position: relative; width: 48%; }
@@ -1162,23 +1158,57 @@ a.js-current {
     .control-buttons { display: none;}
      
     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     .product-choice-box {
-  width: 48%;
-    min-height: 350px;
-  margin-top: 10px;
-  margin-left: 1%;
-  margin-right: 1%;
+    width: 100%;
+    text-align: left;  
+    
+    margin-top: 10px;
+    margin-left: 1%;
+    margin-right: 1%;
   
 }
-  
-.product-choice-box  img {
-   padding: 0;
-    margin-top: 2.5px;
-    margin-bottom: 2.5px;
+    .product-image-placeholder {
+    padding: 0;
+    text-align: center;
+    width: 40%;
+    float: left;
+    
 }
-.product-name-h3 {
-  margin: 0;
+.addprice-bar {
+  display: flex;
+  flex-direction:column;
+  padding: 0;
+  width: 60%;
+  float: right;
+}
+.product-name-h3 > h3 > a {
+  padding: 0;
+}
+.product-name-h3 > h3 {
   
+  
+  padding:  0;
+    font-weight: 400;
+
+  
+}
+..add-item-btn {
+  width: 100px;
 }
 .product-choice-box  h3 {
   color: #404040;
@@ -1198,16 +1228,11 @@ a.js-current {
 }
 
 .item-price-choice-box {
-  width: auto;
-  margin-left: 15px;
-  position: absolute;
-    bottom: 60px;
-  float: left;
-  margin-top: 0;
-  
+  width: 100%;
+  margin-bottom: 10px;
   
 }  
-    
+.item-price-choice-box h4 { padding-left: 30px; }    
       
     
 
