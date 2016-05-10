@@ -623,16 +623,16 @@ ul.topnav li.icon {display: none;}
 .add-item-btn {
     position: relative;
     float: left;
-    margin: 0;
+    margin: 10px 0;
     line-height: 20px;
     background-color: #edebe6;
     width: 170px;
     text-align: center;
     border-radius:5px;
-    
+    color:#404040; 
 
 }
-.add-item-btn { color:#404040; }
+
 .add-item-btn:hover {
     background-color: #404040;
     color: #fff;
@@ -685,13 +685,18 @@ ul.topnav li.icon {display: none;}
 .quantity-box {
     float: left;
     width: 100%;
+    margin: 10px 0;
 }
 
 .shipping-details {
     float: left;
     width: 100%;
 }
-.addtobasketbutton { width: 100%;}
+.addtobasketbutton { 
+    width: 100%;
+    margin:px 0;
+    
+}
 .add-to-wachlist {
     float: left;
     width: 100%;
@@ -757,7 +762,7 @@ ul.topnav li.icon {display: none;}
   margin-right: 15px;
   float: left;
 }
-
+.product-name-h3 {  }
 .product-name-h3 > h3 > a {
   line-height: 18px;
   padding: 10px 0;
@@ -809,7 +814,14 @@ ul.topnav li.icon {display: none;}
 
 .boss-logo-brand { background: rgba(0, 0, 0, 0) url(../images/brand-logo/bose.png) no-repeat scroll top left; }
 
-
+.product-name-h3 {
+    margin-top: 0;
+    border-top: 1px solid #404040;
+    padding-top: 20px;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: normal;
+}
 
 /* Product choice img backgound */
 
@@ -1157,24 +1169,7 @@ a.js-current {
     .button6 h3 { }  
   
     .control-buttons { display: none;}
-     
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    .product-choice-box {
+        .product-choice-box {
     width: 100%;
     text-align: left;  
     
@@ -1248,33 +1243,26 @@ a.js-current {
   
 }  
 .item-price-choice-box h4 { padding-left: 30px; }    
-      
-    
-
-
-
   .panel { float: left; }
   .panel h2 {
     font-size: 26px; line-height: 26px;
   }
   .tabs a { padding: 0 5px; }
   
-  
-}
-
-
-
-
-
-.product-name-h3 {
-    margin-top: 0;
-    border-top: 1px solid #404040;
-    padding-top: 20px;
+  .product-name-h3 {
     
-    font-size: 18px;
-    line-height: 22px;
-    font-weight: normal;
+    border: none;
+    
 }
+
+
+} /* media end here */
+
+
+
+
+
+
 
 .button5-lvl-2 {
     display: flex;
