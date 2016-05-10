@@ -366,12 +366,12 @@ input[type="text"], input[type="password"], textarea {
   line-height: 22.5px;
 }
 .button5 {
-
+     display: flex;   
     float: left;
     border: 1px solid #e6e3dc;
     margin: 20px 15px 0px;
-    padding: px 0 10px;
-    position: relative;
+    padding: 0;
+    
     width: 172px;
 }
 .button5:last-child { margin-left: 0; }
@@ -759,13 +759,14 @@ ul.topnav li.icon {display: none;}
 }
 
 .product-name-h3 > h3 > a {
-  line-height: 20px;
+  line-height: 18px;
   padding: 10px 0;
   color: #404040;
   font-weight: 400;
-  font-size: 22px;
-  text-align: center;
-  margin: 0;
+  font-size: 18px;
+  text-align: left;
+  margin: 10px 0;
+    width: 100%;
   
 }
 
@@ -1125,8 +1126,8 @@ a.js-current {
   
   
 
-    .button5 {  margin: 10px 0 0; padding: 0;  width: 48%; }
-    .button5 { margin-left: 1%; }
+    .button5 {  margin: 2%; padding: 0;  width: 45%; }
+
     .button5 h3 { margin: 20px 10px 0 10px; text-align: left; color: #B9B29C;  display: block; width: 100%;}
     .button1 { text-align: center; float: left; margin: 1%; padding: 0; position: relative; width: 48%; }
     
@@ -1190,7 +1191,7 @@ a.js-current {
     
 }
 
-.button5 .product-image-placeholder-lvl-1 {
+.product-image-placeholder-lvl-1 {
     padding: 10px 0;
     text-align: center;
     
@@ -1211,17 +1212,17 @@ a.js-current {
   float: right;
 }
 .product-name-h3 > h3 > a {
-  padding: 0;
+  padding: 10px 0 0;
 }
 .product-name-h3 > h3 {
   
   
-  padding:  0;
-    font-weight: 400;
+  padding: 0;
+  font-weight: 400;
 
   
 }
-..add-item-btn {
+.add-item-btn {
   width: 100px;
 }
 .product-choice-box  h3 {
@@ -1264,3 +1265,18 @@ a.js-current {
 
 
 
+
+.product-name-h3 {
+    margin-top: 0;
+    border-top: 1px solid #404040;
+    padding-top: 20px;
+    
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: normal;
+}
+
+.button5-lvl-2 {
+    display: flex;
+    flex-direction: column;
+}
