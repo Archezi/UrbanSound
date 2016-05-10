@@ -110,7 +110,7 @@ input[type="text"], input[type="password"], textarea {
     background: rgba(0, 0, 0, 0) url(../images/top-background.jpg) repeat-x scroll center bottom;
 }
 
-
+#menu { width: 100%; }
 #header {
     background: white none repeat scroll 0 0;
     clear: both;
@@ -140,6 +140,7 @@ input[type="text"], input[type="password"], textarea {
 }
 #header_bottom {
     clear: both;
+    width: 100%;
 }
 /* HEADER MANU STYLES NAVIGATION */
 .nav_secondary_top {
@@ -155,7 +156,30 @@ input[type="text"], input[type="password"], textarea {
     border-right: 1px solid #000;
 
 }
+/* Shoping cart */
+#cart {
+  float: right;
+  background: #000;
+  
+  
+  
+}
+#shoping-cart-price-sumary p {
+  
+  float: right;
+  padding:0 15px 0;
+  margin: 0;
+  line-height: 30px;
+  color: #fff;
+}
+.fa-shopping-cart {
+  float: right;
+  
+  color: rgb(185,178,156);
+  line-height: 30px;
 
+
+}
 
 
 
@@ -427,6 +451,7 @@ input[type="text"], input[type="password"], textarea {
   line-height: 65px;
   margin-left: 15px;
   margin-right: 15px;
+  padding: 0;
 }
 
 #box-productPage {
@@ -441,11 +466,17 @@ input[type="text"], input[type="password"], textarea {
 
 
 /* Product info style */
+
+
+.qttyfild {
+    float: left;
+    width: 20%;
+}
 .short-item-description {
   height: 100px;
 
-  overflow: scroll;
-}
+  overflow: scroll;}
+
 #layout-mobification-bar {
   float: left;
   width: 100%;
@@ -480,6 +511,7 @@ input[type="text"], input[type="password"], textarea {
 ul.topnav {
     list-style-type: none;
     margin: 0;
+
     padding: 0;
     overflow: hidden;
     background-color: #2d2d2d;
@@ -493,7 +525,7 @@ ul.topnav li a {
     display: inline-block;
     color: #f2f2f2;
     text-align: center;
-    padding: 10px 16px;
+    padding: 10px 16px 7px;
     text-decoration: none;
     transition: 0.3s;
     font-size: 16px;
@@ -754,19 +786,17 @@ ul.topnav li.icon {display: none;}
 
 
 /* Product choice box style */
-
+/*  Product box  */
 .product-choice-box {
   width: 268px;
   position: relative;
-  border: 1px solid #e6e3dc;
-  
-  padding-bottom: 10px;
-  margin-top: 20px;
-  margin-left: 15px;
-  margin-right: 15px;
   float: left;
-}
-.product-name-h3 {  }
+  margin-top: 20px;
+  margin-right: 15px;
+  padding-bottom: 10px;
+  margin-left: 15px;
+  border: 1px solid #e6e3dc;}
+
 .product-name-h3 > h3 > a {
   line-height: 18px;
   padding: 10px 0;
@@ -775,67 +805,43 @@ ul.topnav li.icon {display: none;}
   font-size: 18px;
   text-align: left;
   margin: 10px 0;
-    width: 100%;
+    width: 100%;}
+
+.product-name-h3 > h3 > a:hover {color: #908366;}
   
-}
 
-.product-name-h3 > h3 > a:hover {
-  color: #908366;
-}
-
+/* price style */
 .product-choice-box h4 {
   line-height: 20px;
   margin-top: 10px;
-  font-weight: bold;
-
-}
-
-/*  Product box  */
+  font-weight: bold;}
 .addprice-bar {
   display: flex;
   flex-direction: column;
   padding: 10px;
-  min-height: 50px;
-}
+  min-height: 50px;}
 .item-price-choice-box {
   width: auto;
-  padding-left: 10px;
-}
-
-
+  padding-left: 10px;}
 .details-button {
     padding-top: 10px;
     color: #0096d6;
-    clear: both;
-    
-}
+    clear: both;}
 .brand-logo-placer {
   width: 100%;
   padding: 10px;
-  position: relative;
-  
-}
-
-.boss-logo-brand { background: rgba(0, 0, 0, 0) url(../images/brand-logo/bose.png) no-repeat scroll top left; }
-
+  position: relative;}
 .product-name-h3 {
     margin-top: 0;
     border-top: 1px solid #404040;
     padding-top: 20px;
-    font-size: 18px;
-    line-height: 22px;
-    font-weight: normal;
-}
-
+    line-height: 22px;}
 /* Product choice img backgound */
-
-.Bose_QuietComfort_25 { background: rgba(0, 0, 0, 0) url(../images/tumbnail/over-ear-btn.jpg) no-repeat scroll center 30px;  }
-
 .product-image-placeholder {
     padding: 0;
-    text-align: center;
+    text-align: center; }
     
-}
+
 
 
 
@@ -849,10 +855,7 @@ ul.topnav li.icon {display: none;}
 
 
 /*   SLIDER  */
-.qttyfild {
-    float: left;
-    width: 20%;
-}
+
 .main-page-container {
     height: 550px;
     margin: 30px 0 0;
@@ -1173,6 +1176,9 @@ a.js-current {
     .button6 h3 { }  
   
     .control-buttons { display: none;}
+
+/* product choice box style media  */
+
         .product-choice-box {
     width: 100%;
     text-align: left;  
@@ -1234,12 +1240,7 @@ a.js-current {
   color: #908366;
 }
 
-.product-choice-box h4 {
-  line-height: 20px;
-  margin-top: 10px;
-  font-weight: bold;
 
-}
 
 .item-price-choice-box {
   width: 100%;
@@ -1259,6 +1260,13 @@ a.js-current {
     
 }
 .brand-logo-placer { padding-top: 30px; }
+
+#menu { width: 100%; }
+/* Shoping cart */
+#topContent-Category > h2 {padding: 0;}
+#cart {  width: 100%; }
+
+
 
 } /* media end here */
 
