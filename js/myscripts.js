@@ -184,7 +184,12 @@ function myFunction() {
 // ============================================================
 
 
-
+$(window).scroll(function () {
+    if ($(window).scrollTop() > 100) {
+        $('#header_bottom').css('top', $(window).scrollTop());
+    }
+}
+);
 
 
 

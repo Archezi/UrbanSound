@@ -441,7 +441,11 @@ input[type="text"], input[type="password"], textarea {
 
 
 /* Product info style */
+.short-item-description {
+  height: 100px;
 
+  overflow: scroll;
+}
 #layout-mobification-bar {
   float: left;
   width: 100%;
@@ -1254,7 +1258,7 @@ a.js-current {
     border: none;
     
 }
-
+.brand-logo-placer { padding-top: 30px; }
 
 } /* media end here */
 
