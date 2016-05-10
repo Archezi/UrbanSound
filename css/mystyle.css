@@ -455,7 +455,7 @@ input[type="text"], input[type="password"], textarea {
 .product-info-img-placeholder {
   float: left;
   width: 370px;
-  height: 370px;
+  
   margin: 30px 15px 20px 0px;
 }
 #product-info-details {
@@ -646,7 +646,7 @@ ul.topnav li.icon {display: none;}
     color: #404040;
     
 }
-
+.product-name-underline { text-decoration: underline; }
 /* Product inforamtion details layout    */
 .product-info-name {
     float: left;
@@ -1242,7 +1242,7 @@ a.js-current {
   margin-bottom: 10px;
   
 }  
-.item-price-choice-box h4 { padding-left: 30px; }    
+.item-price-choice-box h4 { padding-left: 0px; }    
   .panel { float: left; }
   .panel h2 {
     font-size: 26px; line-height: 26px;
