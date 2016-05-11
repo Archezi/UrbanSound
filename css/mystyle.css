@@ -1174,7 +1174,7 @@ a.js-current {
     .product-info-img-placeholder { width: 100%; }
     #product-info-details { max-width: 100%; } 
     .product-info-name > h1 {float: left; font-size: 32px; width: 100%;  }
-    .product-info-price > h2 {text-align: left; font-size: 32px; display: block; width: 100%; }
+    .product-info-price  h2 {text-align: left; font-size: 32px;  width: 100%; padding: 10px 0 0 ;}
      
     
     .product-description { line-height: 16px; }
