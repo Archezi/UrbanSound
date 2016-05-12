@@ -141,6 +141,15 @@ input[type="text"], input[type="password"], textarea {
 #header_bottom {
     clear: both;
     width: 100%;
+    position: relative;
+}
+.shoping-cart {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.fa-shopping-cart:before {
+  line-height: 50px;
 }
 /* HEADER MANU STYLES NAVIGATION */
 .nav_secondary_top {
@@ -172,14 +181,14 @@ input[type="text"], input[type="password"], textarea {
   float: right;
   padding:0 15px 0;
   margin: 0;
-  line-height: 30px;
+  line-height: 50px;
   color: #fff;
 }
 .fa-shopping-cart {
   float: right;
   
   color: rgb(185,178,156);
-  line-height: 30px;
+  line-height: 50px;
 
 
 }
@@ -532,7 +541,7 @@ ul.topnav li a {
     display: inline-block;
     color: #f2f2f2;
     text-align: center;
-    padding: 10px 16px 7px;
+    padding: 10px 16px 10px;
     text-decoration: none;
     transition: 0.3s;
     font-size: 16px;
@@ -548,7 +557,7 @@ ul.topnav li.icon {display: none;}
 @media screen and (max-width:680px) {
   ul.topnav li:not(:first-child) {display: none;}
   ul.topnav li.icon {
-    float: right;
+    float: left;
     display: inline-block;
   }
 }
@@ -1147,9 +1156,11 @@ a.js-current {
 
 
     ul.topnav.responsive {position: relative;}
-    ul.topnav.responsive li.icon { position: absolute; right: 0; top: 0;  }
+    ul.topnav.responsive li.icon { position: absolute; left: 0; top: 0;  }
     ul.topnav.responsive li  { float: none; display: inline;   }
+    ul.topnav.responsive li a:first-child { margin-bottom: 20px; } 
     ul.topnav.responsive li a { display: block; text-align: left;   }
+    ul.topnav.responsive li:first-child { display: none;  }
     
     #logo {width: 100%; position: relative;}
     #header_right, .topWrapper, #aside_navigation, .sm-disapear { display: none;}
@@ -1192,6 +1203,18 @@ a.js-current {
     .add-item-btn { width: 120px;}
     .add-item-btn h3 { padding: 0 2px; font-size: 12px;}
 /* product choice box style media  */
+    
+
+
+    /* Shoping Cart */
+    .shoping-cart { position: absolute; right: 0;  top: 0;
+    
+  
+  
+}
+
+
+
 
         .product-choice-box {
     width: 100%;
