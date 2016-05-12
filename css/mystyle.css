@@ -1158,7 +1158,7 @@ a.js-current {
     ul.topnav.responsive {position: relative;}
     ul.topnav.responsive li.icon { position: absolute; left: 0; top: 0;  }
     ul.topnav.responsive li  { float: none; display: inline;   }
-    ul.topnav.responsive li a:first-child { margin-bottom: 20px; } 
+    ul.topnav.responsive li a:first-child { margin-bottom: 10px; } 
     ul.topnav.responsive li a { display: block; text-align: left;   }
     ul.topnav.responsive li:first-child { display: none;  }
     
@@ -1207,7 +1207,7 @@ a.js-current {
 
 
     /* Shoping Cart */
-    .shoping-cart { position: absolute; right: 0;  top: 0;
+    .shoping-cart { position: absolute; right: 50px;  top: 0;
     
   
   
