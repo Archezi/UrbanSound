@@ -162,6 +162,7 @@ input[type="text"], input[type="password"], textarea {
 #cart {
   float: right;
   background: #000;
+  margin-right: 15px;
   
   
   
@@ -182,6 +183,8 @@ input[type="text"], input[type="password"], textarea {
 
 
 }
+
+
 
 
 
@@ -390,7 +393,9 @@ input[type="text"], input[type="password"], textarea {
 .button2 .footer-list h2 {
   font-size: 18px;
   line-height: 22.5px;
+  padding: 0px;
 }
+
 .button5 {
      display: flex;   
     float: left;
@@ -476,8 +481,8 @@ input[type="text"], input[type="password"], textarea {
 }
 .short-item-description {
   height: 100px;
-
-  overflow: scroll;}
+  overflow: hidden;
+    }
 
 #layout-mobification-bar {
   float: left;
@@ -673,7 +678,7 @@ ul.topnav li.icon {display: none;}
 
 .add-item-btn:hover {
     background-color: #404040;
-    color: #fff;
+    
 }
 .add-item-btn h3:hover {
    color: #A69A7C;
@@ -1069,12 +1074,13 @@ a.js-current {
 
 
 /* Contact Website */
-.contact-detail {display: flex; flex-direction: column;}
-.contact-list { margin-right: 30px; width: 270px; float: left;}
-.contact-list   li{
-  line-height: 24px;
-}
-.google-map-wrapper  iframe{  float: left; display: block; }
+.contact-detail {display: flex; flex-direction: row;}
+.contact-list { margin-right: 30px; margin-top: 10px; width: 270px; float: left;}
+.contact-list   li{  line-height: 24px; }
+.contact-form-container { width:100%; } 
+  
+
+.google-map-wrapper  {   display: block; margin-top: 10px;}
 
 
 
@@ -1152,11 +1158,8 @@ a.js-current {
     #contentWrapperMain { background: #fff; }
     #topContent-Category > h2 > a { color: #404040; font-size: 12px; line-height: 20px;}
     #product-info-wrapper { background: #fff; }
-  
-  
 
     .button5 {  margin: 2%; padding: 0;  width: 45%; }
-
     .button5 h3 { margin: 20px 10px 0 10px; text-align: left; color: #B9B29C;  display: block; width: 100%;}
     .button1 { text-align: center; float: left; margin: 1%; padding: 0; position: relative; width: 48%; }
     
@@ -1186,7 +1189,8 @@ a.js-current {
     .button6 h3 { }  
   
     .control-buttons { display: none;}
-
+    .add-item-btn { width: 120px;}
+    .add-item-btn h3 { padding: 0 2px; font-size: 12px;}
 /* product choice box style media  */
 
         .product-choice-box {
@@ -1226,9 +1230,9 @@ a.js-current {
   width: 60%;
   float: right;
 }
-.product-name-h3 > h3 > a {
-  padding: 10px 0 0;
-}
+.product-name-h3 > h3 > a { padding: 10px 0 0; }
+  
+
 .product-name-h3 > h3 {
   
   
@@ -1237,9 +1241,7 @@ a.js-current {
 
   
 }
-.add-item-btn {
-  width: 100px;
-}
+
 .product-choice-box  h3 {
   color: #404040;
   font-weight: 400;
@@ -1277,9 +1279,9 @@ a.js-current {
 #cart {  width: 100%; }
 
         /* Contact Website */
-        
-
-
+       
+.contact-detail { flex-direction: column;}
+.contact-detail iframe { width:270px; height:270px; }
 } /* media end here */
 
 

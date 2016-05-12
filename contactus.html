@@ -72,7 +72,7 @@
 	<div id="contentWrapper">
 		<div id="mainContent">
 			<div id="topContent-Category">
-				<h2>Store Location</h2>
+				<h2>Contact Us</h2>
 			</div>
 			<div class="web-content">
 				<div id="aside_navigation">
@@ -121,28 +121,65 @@
 
 				
 
-					<div class="contact-detail">
-						<div class="contact-list">
-							<ul>
-			                    <li></li>
-				                <li>Adress:</li>
-				                <li>Fourth Floor, Dollard House</li>
-				                <li>2-5 Wellington Quay</li>
-				                <li>Temple Bar, Co. Dublin</li>
-				                <li>+353 876283455</li>
-				                <li>@ urbansound@gmail.com</li>
-				                <li>Fb, Pintrest</li>
-			            	</ul>
-						</div>
-						<div class="google-map-wrapper">
-							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2381.8842335378545!2d-6.267658684161592!3d53.34532847997888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670c282dc904e1%3A0x2119a1fe51f69ee6!2sTemple+Bar+Company!5e0!3m2!1sen!2sie!4v1462909637458" width="450" height="450" frameborder="0" style="border:0" ></iframe>
-						</div>
-						<!-- Begin MailChimp Signup Form -->
+					
 
+    					
+    <iframe
+      id="JotFormIFrame"
+      onload="window.parent.scrollTo(0,0)"
+      allowtransparency="true"
+      src="https://form.jotformeu.com/61313978673364"
+      frameborder="0"
+      style="width:100%;
+      height:607px;
+      border:none;"
+      scrolling="no">
+    </iframe>
+    <script type="text/javascript">
+      window.handleIFrameMessage = function(e) {
+        var args = e.data.split(":");
+        var iframe = document.getElementById("JotFormIFrame");
+        if (!iframe)
+          return;
+        switch (args[0]) {
+          case "scrollIntoView":
+            iframe.scrollIntoView();
+            break;
+          case "setHeight":
+            iframe.style.height = args[1] + "px";
+            break;
+          case "collapseErrorPage":
+            if (iframe.clientHeight > window.innerHeight) {
+              iframe.style.height = window.innerHeight + "px";
+            }
+            break;
+          case "reloadPage":
+            window.location.reload();
+            break;
+        }
+        var isJotForm = (e.origin.indexOf("jotform") > -1) ? true : false;
+        if(isJotForm && "contentWindow" in iframe && "postMessage" in iframe.contentWindow) {
+          var urls = {"docurl":encodeURIComponent(document.URL),"referrer":encodeURIComponent(document.referrer)};
+          iframe.contentWindow.postMessage(JSON.stringify({"type":"urls","value":urls}), "*");
+        }
+      };
+      if (window.addEventListener) {
+        window.addEventListener("message", handleIFrameMessage, false);
+      } else if (window.attachEvent) {
+        window.attachEvent("onmessage", handleIFrameMessage);
+      }
+      if(window.location.href && window.location.href.indexOf("?") > -1) {
+        var ifr = document.getElementById("JotFormIFrame");
+        var get = window.location.href.substr(window.location.href.indexOf("?") + 1);
+        if(ifr && get.length > 0) {
+          var src = ifr.src;
+          src = src.indexOf("?") > -1 ? src + "&" + get : src  + "?" + get;
+          ifr.src = src;
+        }
+      }
+      </script>
 
-
-
-					</div>
+					
 				
 					
 				</div>
