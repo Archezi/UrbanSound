@@ -434,7 +434,7 @@ input[type="text"], input[type="password"], textarea {
   max-width: 1200px;
   margin: 0 auto;
 }
-
+.pinterest-icon, .facebook-icon { padding-right: 15px; }
 /* ASIDE */
 
 #aside_navigation > ul > li > a {
@@ -1231,7 +1231,9 @@ a.js-current {
     .add-item-btn h3 { padding: 0 2px; font-size: 12px;}
 /* product choice box style media  */
     
-
+    /*Social media*/
+    .social-media{padding-top: 10px;}
+    .social-media a { padding-right: 5px; }
 
     /* Shoping Cart */
     .shoping-cart { position: absolute; right: 0px;  top: 0;
