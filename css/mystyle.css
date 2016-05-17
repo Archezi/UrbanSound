@@ -913,7 +913,8 @@ ul.topnav li.icon {display: none;}
 /**
  * ---[Caption] ---------------------- 
  **/
-.slider-wrapper .caption-1 {
+.slider-wrapper .caption-1,
+.slider-wrapper .caption-3  {
 	position: absolute;
 	bottom: 280px;
 	right: 0;
