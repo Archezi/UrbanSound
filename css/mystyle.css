@@ -685,17 +685,13 @@ ul.topnav li.icon {display: none;}
 
 }
 
-.add-item-btn:hover {
-    background-color: #404040;
-    
-}
-.add-item-btn h3:hover {
-   color: #A69A7C;
+
+
 }
 .add-item-btn > h3 {
     font-size: 16px;
     font-weight: 400;
-    color: #404040;
+    
     
 }
 .product-name-underline { margin: 0; padding: 0; }
